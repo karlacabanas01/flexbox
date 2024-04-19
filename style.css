@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery-container {
+  display: flex; /* Establece el modelo de caja flexible para el contenedor. */
+  flex-wrap: wrap; /* Permite que los elementos hijos se envuelvan en líneas adicionales si no hay espacio suficiente. */
+  justify-content: space-around; /* Distribuye espacio antes, después y entre los elementos hijos. */
+  align-items: flex-start; /* Alinea los elementos hijos al inicio del contenedor en el eje transversal. */
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.gallery-item {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item {
+    flex: 0 0 calc(100% - 20px);
+  }
+}
