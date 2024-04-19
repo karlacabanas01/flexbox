@@ -5,7 +5,7 @@ body {
 }
 
 .gallery-container {
-  display: flex; /* Establece el modelo de caja flexible para el contenedor. */
+  display: flex; /* Establece el modelo de flexbox para el contenedor. */
   flex-wrap: wrap; /* Permite que los elementos hijos se envuelvan en líneas adicionales si no hay espacio suficiente. */
   justify-content: space-around; /* Distribuye espacio antes, después y entre los elementos hijos. */
   align-items: flex-start; /* Alinea los elementos hijos al inicio del contenedor en el eje transversal. */
